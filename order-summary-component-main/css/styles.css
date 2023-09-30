@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@1&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+html {
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+	background-color: hsl(225, 100%, 94%);
+	padding: 2rem;
+}
+
+.card {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: .5rem;
+	text-align: center;
+	background-color: white;
+}
+
+.card div:first-child {
+	background-color: orange;
+	grid-column: span 3;
+}
+
+.card div:nth-child(2) {
+	background-color: red;
+	grid-column: span 3;
+}
+
+.card div:nth-child(3) {
+	background-color: aqua;
+	grid-column: span 3;
+}
+
+.card div:nth-child(4) {
+	background-color: blue;
+}
+
+.card div:nth-child(5) {
+	background-color: red;
+}
+
+.card div:nth-child(6) {
+	background-color: orange;
+}
+
+.card div:nth-child(7) {
+	background-color: green;
+	grid-column: span 3;
+}
+
+.card div:nth-child(8) {
+	background-color: blue;
+	grid-column: span 3;
+}
+
+
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: hsl(228, 45%, 44%);
+}
