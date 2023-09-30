@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
 * {
 	margin: 0;
@@ -10,13 +10,18 @@ ul {
 	list-style: none;
 }
 
+img {
+	display: block;
+	width: 100%;
+}
+
 html {
 	font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
 	background-color: hsl(225, 100%, 94%);
-	padding: 2rem;
+	padding: 1.5rem;
 }
 
 .card {
@@ -25,55 +30,72 @@ body {
 	padding: .5rem;
 	text-align: center;
 	background-color: white;
+	padding: 0;
+	border-radius: 1.5rem;
 }
 
+/* large image */
 .card figure {
-	background-color: aquamarine;
 	grid-column: span 3;
+	padding-bottom: 2rem;
 }
 
-.card div:first-child {
-	background-color: orange;
-	grid-column: span 3;
+.card figure img {
+	border-radius: 1.5rem 1.5rem 0 0;
 }
 
+/* Order... */
 .card div:nth-child(2) {
-	background-color: red;
 	grid-column: span 3;
+	font-weight: 700;
+	font-size: 1.3rem;
+	padding-bottom: 1rem;
 }
 
+/* You can... */
 .card div:nth-child(3) {
-	background-color: aqua;
-	grid-column: span 3;
+	grid-column:span 3;
+	color: hsl(224, 23%, 55%);
+	font-size: 1rem;
+	padding-bottom: 1rem;
 }
 
+/* ICON */
 .card div:nth-child(4) {
-	background-color: blue;
+	background-color: hsl(225, 100%, 98%);
+	margin-left: 1rem;
+	border-radius: 1rem 0 0 1rem;
 }
 
+.card div:nth-child(4) img {
+	transform: scale(.6);
+}
+
+/* Annual... */
 .card div:nth-child(5) {
-	background-color: red;
+	background-color: hsl(225, 100%, 98%);
+	height: 100%;
+	padding-top: 1.5rem;
 }
 
+/* Change */
 .card div:nth-child(6) {
-	background-color: orange;
+	background-color: hsl(225, 100%, 98%);
+	margin-right: 1rem;
+	border-radius: 0 1rem 1rem 0;
+	height: 100%;
+	padding-top: 2rem;
 }
 
+/* Proceed... */
 .card div:nth-child(7) {
-	background-color: green;
 	grid-column: span 3;
 }
 
+/* Cancel... */
 .card div:nth-child(8) {
-	background-color: blue;
 	grid-column: span 3;
 }
-
-.card div:nth-child(9) {
-	background-color: yellow;
-	grid-column: span 3;
-}
-
 
 
 .attribution {
