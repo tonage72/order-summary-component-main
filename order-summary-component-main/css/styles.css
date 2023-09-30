@@ -27,6 +27,11 @@ body {
 	background-color: white;
 }
 
+.card figure {
+	background-color: aquamarine;
+	grid-column: span 3;
+}
+
 .card div:first-child {
 	background-color: orange;
 	grid-column: span 3;
