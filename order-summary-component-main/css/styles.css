@@ -69,6 +69,11 @@ body {
 	grid-column: span 3;
 }
 
+.card div:nth-child(9) {
+	background-color: yellow;
+	grid-column: span 3;
+}
+
 
 
 .attribution {
