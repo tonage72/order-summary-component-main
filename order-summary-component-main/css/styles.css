@@ -24,6 +24,10 @@ body {
 	padding: 1.5rem;
 }
 
+.bold {
+	font-weight: 900;
+}
+
 .card {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -44,6 +48,10 @@ body {
 	border-radius: 1.5rem 1.5rem 0 0;
 }
 
+.ltcolortext {
+	color: hsl(224, 23%, 55%);
+}
+
 /* Order... */
 .card div:nth-child(2) {
 	grid-column: span 3;
@@ -55,7 +63,6 @@ body {
 /* You can... */
 .card div:nth-child(3) {
 	grid-column:span 3;
-	color: hsl(224, 23%, 55%);
 	font-size: 1rem;
 	padding-bottom: 1rem;
 }
@@ -73,6 +80,7 @@ body {
 
 /* Annual... */
 .card div:nth-child(5) {
+	line-height: 1.5rem;
 	background-color: hsl(225, 100%, 98%);
 	height: 100%;
 	padding-top: 1.5rem;
